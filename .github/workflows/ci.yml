@@ -7,11 +7,19 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: myApp
+
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Use Node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: myApp/package-lock.json
+
       - run: npm ci
       - run: npm test
