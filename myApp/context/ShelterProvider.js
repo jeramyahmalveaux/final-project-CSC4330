@@ -1,4 +1,4 @@
-// context/ShelterProvider.js
+
 import React, {
   createContext,
   useContext,
@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { supabase } from "../lib/sheltersSupabase";
+import { fetchSheltersWithCache } from "../src/services/shelterCacheService";
 
 const ShelterContext = createContext(null);
 

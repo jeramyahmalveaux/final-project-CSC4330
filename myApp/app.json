@@ -15,8 +15,9 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.refugeapp",
-      "config": {
-        "googleMapsApiKey":"AIzaSyDPhXPGd4SsBOfaetReCCAwqv2Hdl1VyLM"
+      "config": {},
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -25,12 +26,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.refugeapp",
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyChXa1dyNOBdQS2JAfJ7N-iYU9hgb7lrrQ"
-        }
-      }
+      "package": "com.refugeapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
